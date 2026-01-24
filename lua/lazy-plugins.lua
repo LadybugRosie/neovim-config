@@ -1,36 +1,38 @@
 -- [[ Configure and install plugins ]]
 
 require('lazy').setup({
-  require 'plugins.guessindent',
-
-  require 'plugins.gitsigns',
-
-  require 'plugins.vimtex',
-
-  require 'plugins.whichkey',
-
-  require 'plugins.telescope',
-
-  require 'plugins.lsp',
-
-  require 'plugins.autoformat',
-
-  require 'plugins.autocompletion',
 
   require 'plugins.colorscheme',
-
-  require 'plugins.todo_comments',
 
   require 'plugins.mini',
 
   require 'plugins.treesitter',
 
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'plugins.guessindent',
+
+  require 'plugins.neo_tree',
+
+  require 'plugins.whichkey',
+
+  require 'plugins.flash',
+
+  require 'plugins.lsp',
+
+  require 'plugins.autocompletion',
+
+  require 'plugins.autoformat',
+
+  require 'plugins.autopairs',
+
+  require 'plugins.gitsigns',
+
+  require 'plugins.todo_comments',
+
+  require 'plugins.vimtex',
+
+  require 'plugins.auto_session',
+
+  require 'plugins.telescope',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
