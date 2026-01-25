@@ -60,6 +60,10 @@ return {
     dashboard.section.buttons.opts.hl = 'Keyword'
 
     dashboard.opts.opts.noautocmd = true
+
     alpha.setup(dashboard.opts)
+
+    -- Set alpha keymap
+    vim.keymap.set('n', '<leader>os', vim.cmd.Alpha, { desc = '[O]pen [S]tart-up Screen' })
   end,
 }
