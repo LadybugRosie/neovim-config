@@ -2,11 +2,13 @@
 return {
   'Shatur/neovim-session-manager',
   lazy = false,
-  opts = {},
-  config = function(_, opts)
+  config = function()
     -- Setup session manager with opts
     local session_manager = require 'session_manager'
-    session_manager.setup(opts)
+    local config = require 'session_manager.config'
+    session_manager.setup {
+      autoload_mode = config.AutoloadMode.Disabled,
+    }
 
     -- Auto-save session
     vim.api.nvim_create_autocmd({ 'BufWritePre' }, {

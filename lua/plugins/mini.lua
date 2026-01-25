@@ -1,6 +1,6 @@
 -- Collection of various small independent plugins/modules
 return {
-  'echasnovski/mini.nvim',
+  'nvim-mini/mini.nvim',
   config = function()
     -- Better Around/Inside textobjects
     --
@@ -32,7 +32,25 @@ return {
       return '%2l:%-2v'
     end
 
-    -- ... and there is more!
-    --  Check out: https://github.com/echasnovski/mini.nvim
+    -- Mini-starter
+    --    require('mini.starter').setup {
+    --      items = {
+    --        { name = 'Echo random number', action = 'lua print(math.random())', section = 'Recent Files' },
+    --        function()
+    --          return {
+    --            { name = 'Item #1 from function', action = [[echo 'Item #1']], section = 'From function' },
+    --            { name = 'Placeholder (always inactive) item', action = '', section = 'From function' },
+    --            function()
+    --              return {
+    --                name = 'Item #1 from double function',
+    --                action = [[echo 'Double function']],
+    --                section = 'From double function',
+    --              }
+    --            end,
+    --          }
+    --        end,
+    --        { name = [[Another item in 'Section 1']], action = 'lua print(math.random() + 10)', section = 'Section 1' },
+    --      },
+    --    }
   end,
 }

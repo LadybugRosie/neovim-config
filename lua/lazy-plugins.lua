@@ -4,6 +4,8 @@ require('lazy').setup({
 
   require 'plugins.colorscheme',
 
+  require 'plugins.alpha',
+
   require 'plugins.session_manager',
 
   require 'plugins.mini',
@@ -32,7 +34,7 @@ require('lazy').setup({
 
   require 'plugins.vimtex',
 
-  require 'plugins.auto_session',
+  -- require 'plugins.auto_session',
 
   require 'plugins.telescope',
 }, {
