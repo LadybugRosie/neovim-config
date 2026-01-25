@@ -20,7 +20,11 @@ require('lazy').setup({
 
   require 'plugins.flash',
 
-  require 'plugins.lsp',
+  require('plugins.lsp')[1], -- Lazydev
+
+  require('plugins.lsp')[2], -- Luvit-meta
+
+  require('plugins.lsp')[3], -- Lspconfig & Mason
 
   require 'plugins.autocompletion',
 
