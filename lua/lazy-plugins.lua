@@ -4,6 +4,8 @@ require('lazy').setup({
 
   require 'plugins.colorscheme',
 
+  require 'plugins.session_manager',
+
   require 'plugins.mini',
 
   require 'plugins.treesitter',
