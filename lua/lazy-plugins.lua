@@ -6,7 +6,7 @@ require('lazy').setup({
 
   require 'plugins.alpha',
 
-  require 'plugins.session_manager',
+  -- require 'plugins.session_manager',
 
   require 'plugins.mini',
 
