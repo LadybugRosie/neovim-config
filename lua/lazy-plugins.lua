@@ -10,6 +10,10 @@ require('lazy').setup({
 
   require 'plugins.mini',
 
+  -- require 'plugins.remote_ssh',
+
+  -- require 'plugins.remote_nvim',
+
   require 'plugins.treesitter',
 
   require 'plugins.guessindent',
